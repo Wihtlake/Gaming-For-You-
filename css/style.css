@@ -28,7 +28,7 @@ body{
     background: #000;
     
 }
-@media (max-width: 575.98px) { 
+@media (min-width: 576px) and (max-width: 767.98px) { 
 
     .container{
         
@@ -144,7 +144,7 @@ body{
     height: 2px ;
     background: #ffc600;
 }
-@media (max-width: 575.98px){
+@media (min-width: 576px) and (max-width: 767.98px){
 
     .header__first--logo--page{
         display: none;
@@ -295,7 +295,7 @@ body{
     font-size: 10pt;
 
 }
-@media (max-width: 575.98px){
+@media (min-width: 576px) and (max-width: 767.98px){
     .about__text--sublime{
         padding: 20px 0;
     }
@@ -448,7 +448,7 @@ body{
     object-fit: cover;
     border-bottom: 2px solid #fff;
 }
-@media (max-width: 575.98px){
+@media (min-width: 576px) and (max-width: 767.98px){
     .featured__inner{
         padding: 0;
         text-align: center;
@@ -622,7 +622,7 @@ body{
 
 }
 
-@media (max-width: 575.98px){
+@media (min-width: 576px) and (max-width: 767.98px){
     .strategic__main--up--container{
         padding: 0 20px;
         text-align: center;
@@ -751,7 +751,7 @@ body{
     color: #fff;
     font-size: 11pt;
 }
-@media (max-width: 575.98px){
+@media (min-width: 576px) and (max-width: 767.98px){
     .services__box--elements{
         flex-direction: column;
     }
@@ -866,7 +866,7 @@ body{
     font-size: 16pt;
     color: #595959;
 }
-@media (max-width: 575.98px){
+@media (min-width: 576px) and (max-width: 767.98px){
     .ourTeam__block{
         padding: 0;
         margin: 0 auto;   
@@ -974,7 +974,7 @@ body{
     font-size: 16pt;
 
 }
-@media (max-width: 575.98px){
+@media (min-width: 576px) and (max-width: 767.98px){
     .Testimonials__discription__text{
         padding: 0 ;
         margin: 0 auto;
@@ -1097,7 +1097,7 @@ body{
     font-size: 12pt;
     font-weight: bold;
 }
-@media (max-width: 575.98px){
+@media (min-width: 576px) and (max-width: 767.98px){
     .blogs__block{
         flex-direction: column;
     }
@@ -1315,7 +1315,7 @@ body{
 .contact__form__footer--img{
     width: 25px;
 }
-@media (max-width: 575.98px){
+@media (min-width: 576px) and (max-width: 767.98px){
     .contact__block{
         flex-direction: column;
     }
@@ -1337,7 +1337,7 @@ body{
         justify-content: center;
     }
     .contact__form__heading::after{
-        display: none;
+        display: none; m
     }
     .form__main--form--form{
         margin: 0 auto;
@@ -1449,7 +1449,7 @@ body{
 .emptiness2{
     height: 40px;
 }
-@media (max-width: 575.98px){
+@media (min-width: 576px) and (max-width: 767.98px){
     .weCreate__block{
         flex-direction: column-reverse;
     }
