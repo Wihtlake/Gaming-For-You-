@@ -28,22 +28,16 @@ body{
     background: #000;
     
 }
-@media (min-width: 576px) and (max-width: 767.98px) { 
+@media (min-width: 500px) and (max-width: 767.98px) { 
 
     .container{
-        
         width: 100%;
-        background: #fff;
     }
     .container1{
-        margin: 0 auto;
         width: 100%;
     }
     .container2{
         width: 100%;
-        margin: 0 auto;
-        background: #000;
-        
     }
 }
 /* НАЧАЛО header   //////////////////////////////////////////*/
@@ -144,7 +138,7 @@ body{
     height: 2px ;
     background: #ffc600;
 }
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (min-width: 500px) and (max-width: 767.98px){
 
     .header__first--logo--page{
         display: none;
@@ -153,6 +147,15 @@ body{
         padding: 0;
         text-align: center;
  
+    }
+    .header__menu-block{
+        min-height: auto;
+        padding: 0 ;
+        margin: 0 auto;
+        background: url(../img/Layer\ 1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
     }
     .nav__link--active::after{
         display: none;
@@ -295,7 +298,7 @@ body{
     font-size: 10pt;
 
 }
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (min-width: 500px) and (max-width: 767.98px){
     .about__text--sublime{
         padding: 20px 0;
     }
@@ -448,7 +451,7 @@ body{
     object-fit: cover;
     border-bottom: 2px solid #fff;
 }
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (min-width: 500px) and (max-width: 767.98px){
     .featured__inner{
         padding: 0;
         text-align: center;
@@ -622,7 +625,7 @@ body{
 
 }
 
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (min-width: 500px) and (max-width: 767.98px){
     .strategic__main--up--container{
         padding: 0 20px;
         text-align: center;
@@ -751,7 +754,7 @@ body{
     color: #fff;
     font-size: 11pt;
 }
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (min-width: 500px) and (max-width: 767.98px){
     .services__box--elements{
         flex-direction: column;
     }
@@ -866,7 +869,7 @@ body{
     font-size: 16pt;
     color: #595959;
 }
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (min-width: 500px) and (max-width: 767.98px){
     .ourTeam__block{
         padding: 0;
         margin: 0 auto;   
@@ -974,7 +977,7 @@ body{
     font-size: 16pt;
 
 }
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (min-width: 500px) and (max-width: 767.98px){
     .Testimonials__discription__text{
         padding: 0 ;
         margin: 0 auto;
@@ -1097,7 +1100,7 @@ body{
     font-size: 12pt;
     font-weight: bold;
 }
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (min-width: 500px) and (max-width: 767.98px){
     .blogs__block{
         flex-direction: column;
     }
@@ -1315,7 +1318,7 @@ body{
 .contact__form__footer--img{
     width: 25px;
 }
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (min-width: 500px) and (max-width: 767.98px){
     .contact__block{
         flex-direction: column;
     }
@@ -1449,7 +1452,7 @@ body{
 .emptiness2{
     height: 40px;
 }
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (min-width: 500px) and (max-width: 767.98px){
     .weCreate__block{
         flex-direction: column-reverse;
     }
