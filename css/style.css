@@ -1327,6 +1327,21 @@ body{
         padding: 0;
         margin: 0 auto;
     }
+    .contact__form__main--form{
+        padding: 0;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .contact__form__heading{
+        align-items: center;
+        justify-content: center;
+    }
+    .contact__form__heading::after{
+        display: none;
+    }
+    .form__main--form--form{
+        margin: 0 auto;
+    }
     .contact__form__heading{
         width: 100%;
     }
