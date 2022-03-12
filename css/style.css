@@ -1058,7 +1058,7 @@ body{
 
 @media (max-width: 575.98px) {
     .container,.container1 ,  .container2{
-        max-width: 100%;
+        width: 100%;
         padding: 0 15px;
     }
     .header__menu-block{
@@ -1106,14 +1106,51 @@ body{
         width: 100%;
     }
     .about__text--sublime{
-        padding: 0;
-        margin: 0 auto;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
+        min-width: 320px;
     }
     .text__sublime--first,.text__sublime--second{
         text-align: center;
+        font-size: 10vw;
+    }
+    .about__inner{
+        align-items: center;
+        width: 100%;
+        padding: 0 ;
+        margin: 0 auto;
+    }
+    .about__text--description{
+        min-width: 320px;
+    }
+    .text__sublime--second::after{
+        display: none;
+
+    }
+    .featured__menu--list{
+        flex-direction: column;
+        text-align: center;
+    }
+   .featured__inner{
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .heading__inner{
+        justify-content: center;
+    }
+    .heading__text__second::after{
+        display: none;
+
+    }
+    .strategic__heading{
+        flex-direction: column;
+        text-align: center;
+    }
+    .services__container{
+        min-width: 320px;
+    }
+    .ourTeam__heading{
+        align-items: center;
+        flex-direction: column;
     }
 }
 
@@ -1138,7 +1175,7 @@ body{
         text-align: center;
     }
     .strategic__block{
-        grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
     .about__app{
         flex-direction: column;
