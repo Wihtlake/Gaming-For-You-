@@ -1057,9 +1057,9 @@ body{
 /* responsive starts here */
 
 @media (max-width: 575.98px) {
-    .container, {
+    .container {
         width: 100%;
-        padding: 0 15px;
+        
     }
     .container2{
         padding: 0;
@@ -1068,6 +1068,10 @@ body{
     .container1{
         width: 100%;
         padding: 0;
+    }
+    .contact__form__main--form *{
+        margin: 10px auto;
+        text-align: center;
     }
     .header__menu-block{
         height: auto;
@@ -1280,7 +1284,9 @@ body{
         padding: 0;
         margin: 0 auto;
     }
-  
+    .menu__header--first, .menu__header--first::before{
+        font-size: 2vw;
+    }
     .strategic__first-discription,.strategic__second-discription{
         padding: 0 20px;
         text-align: center;
@@ -1368,12 +1374,17 @@ body{
     .container, .container1 .container2{
         max-width: 540px;
     }
-    
+    .menu__discription--link::before{
+        display: none;
+    }
     .header__text{
         font-size: 20vw;
         text-align: center;
         margin-bottom: 0;
         letter-spacing: normal;
+    }
+    .menu__header--first, .menu__header--first::before{
+        font-size: 15vw !important; 
     }
     .weCreate__block{
         flex-direction: column-reverse;
@@ -1482,14 +1493,23 @@ body{
     .contact__form{
         width: 100%;
     }
+    .ourTeam__heading{
+        padding-top: 50px;
+    }
 }
 
 @media (max-width: 991.98px) { 
     .container, .container1,  .container2{
         max-width: 720px;
     }
+    .weCreate__landing__heading, .weCreate__landing__heading::before{
+        font-size: 10vw;
+    }
     .contact__form__main--form, .form__main--form--form,.form__main--input--2 ,.form__main--input--3{
         width: 100%;
+    }
+    .header__text{
+        font-size: 25vw;
     }
     .blogs__block{
         flex-direction: column;
@@ -1537,8 +1557,8 @@ body{
         flex-direction: column;
         align-items: center;
     }
-    .menu__header--first{
-        font-size: 50pt;
+    .menu__header--first, .menu__header--first::before{
+        font-size: 6vw;
     }
     /* contact */
     .form__main--form--form, 
