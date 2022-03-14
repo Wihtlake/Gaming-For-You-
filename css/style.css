@@ -1057,12 +1057,9 @@ body{
 /* responsive starts here */
 
 @media (max-width: 575.98px) {
-    .container,.container1 ,  .container2{
+    .container,.container1 , .container2{
         width: 100%;
         padding: 0 15px;
-    }
-    .header__menu-block{
-        padding: 0;
     }
     .header__discription{
         text-align: center;
@@ -1106,24 +1103,13 @@ body{
         width: 100%;
     }
     .about__text--sublime{
-        min-width: 320px;
     }
     .text__sublime--first,.text__sublime--second{
         text-align: center;
         font-size: 10vw;
     }
-    .about__inner{
-        align-items: center;
-        width: 100%;
-        padding: 0 ;
-        margin: 0 auto;
-    }
-    .about__text--description{
-        min-width: 320px;
-    }
     .text__sublime--second::after{
         display: none;
-
     }
     .featured__menu--list{
         flex-direction: column;
@@ -1142,19 +1128,62 @@ body{
 
     }
     .strategic__heading{
-        flex-direction: column;
         text-align: center;
     }
     .services__container{
-        min-width: 320px;
+        min-width: auto;
     }
     .ourTeam__heading{
         align-items: center;
-        flex-direction: column;
     }
-    .weCreate__menu{
+    .header__first--logo--page,
+    .header__discription_text,
+    .about__text--description,
+    .description__first,
+    .description__second,
+    .about__items,
+    .featured__menu--link,
+    .strategic__first-heading,
+    .strategic__second-heading,
+    .strategic__main--up--container,
+    .contact__form__location,
+    .ourTeam__heading,
+    .strategic__first-heading,
+    .weCreate__menu,
+    .header__menu-block,
+    .header__text--menu,
+    .about__inner,
+    .about__app,
+    .contact__form,
+    .header__menu-block,
+    .about__inner{
         padding: 0;
         margin: 0 auto;
+    }
+    .strategic__block{
+        grid-template-columns: repeat(auto-fit);
+    }
+    .services__box--heading,.about__inner{
+        flex-direction: column;
+    }
+    .about__text--sublime,.about__text--description,.about__items{
+        min-width: auto;
+    }
+    .block__item,.about__items{
+        width: 100%;
+    }
+    .header__text--logo2,.header__text--logo1{
+        font-size: 1vw;
+    }
+    .photo__block,.strategic__heading,.heading__inner{
+        flex-direction: column;
+    }
+    .header__text--logo1,.header__text--logo2,.
+    .strategic__photo--img{
+        width: 20%;
+    }
+    .ourTeam__heading{
+        width: auto;
     }
 }
 
@@ -1179,7 +1208,7 @@ body{
         text-align: center;
     }
     .strategic__block{
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
     .about__app{
         flex-direction: column;
@@ -1190,11 +1219,7 @@ body{
         flex-wrap: wrap;
         width: 100%;
     }
-    .block__item{
-        min-width: 350px;
-        margin-bottom: 20px;
-
-    }
+   
     .services__box--width,.services__box--block{
         padding: 0;
         margin: 0 auto;
@@ -1213,9 +1238,6 @@ body{
     }
     .services__box--elements{
         margin-bottom: 50px;
-    }
-    .ourTeam__heading{
-        margin: 50px;
     }
     .ourTeam__block{
         padding: 0;
