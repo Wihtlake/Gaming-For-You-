@@ -1383,6 +1383,9 @@ body{
         font-size: 20vw !important;
         text-align: center;
     }
+    .nav__link::after{
+        display: none;
+    }
     .menu__header--first, .menu__header--first::before{
         font-size: 2vw;
     }
