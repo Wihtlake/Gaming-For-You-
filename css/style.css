@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: Myriad Pro;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #0E0E0E;
 }
@@ -72,6 +74,9 @@ body{
     font-size: 18pt;
     text-decoration: none;
 }
+.header__download:hover{
+    text-decoration: 0px underline #ffc600;
+}
 .header__menu-block{
     height: 954px;
     margin-top: 67px;
@@ -108,16 +113,22 @@ body{
     font-size: 18pt;
     font-family: Myriad Pro3 ;
     text-decoration: none;
+    transition: color 0.2s ease-in-out;
 }
-.nav__link--active{
-    color: white;
+.nav__link:hover::after{
+    width: 100%;
 }
-.nav__link--active::after{
+.nav__link::after{
     content: " ";
     display: block;
     margin: 2px;
+    width: 0%;
     height: 2px ;
     background: #ffc600;
+    transition: width 0.3s ease-in-out;
+}
+.nav__link:hover{
+    color: white;
 }
 /* КОНЕЦ header   //////////////////////////////////////////*/
 /* НАЧАЛО about  ////////////////////////////////////////// */
@@ -291,11 +302,24 @@ body{
     margin-right: 35px;
     color: #000;
     text-decoration: none;
-}
-.featured__menu--active{
     position: relative;
+    
+    
 }
-.featured__menu--active::after{
+.featured__menu--link::after{
+    content: "";
+    width: 0%;
+    right: 0;
+    left: 0;
+    bottom: -3px;
+    margin: 0 auto;
+    height: 1px;
+    background: #ffffff;
+    position: absolute;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.featured__menu--link:hover::after {
     content: "";
     width: 50%;
     right: 0;
@@ -306,7 +330,24 @@ body{
     background: #ffc600;
     position: absolute;
     text-align: center;
+    
 }
+/* .featured__menu--active{
+    position: relative;
+ */
+
+/* .featured__menu--active::after{
+    content: "";
+    width: 50%;
+    right: 0;
+    left: 0;
+    bottom: -3px;
+    margin: 0 auto;
+    height: 1px;
+    background: #ffc600;
+    position: absolute;
+    text-align: center;
+} */
 .photo__block{
     display: flex;
     width: 100%;
@@ -599,6 +640,11 @@ body{
 .ourTeam__cards{
     margin: 20px 20px;
     width: 220px;
+    transition: transform 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+}
+.ourTeam__cards:hover{
+    transform: scale(1.05);
+    box-shadow: -0px -20px 100px rgb(29, 131, 172);
 }
 .ourTeam__img{
     width: 220px;
@@ -741,6 +787,13 @@ body{
     font-size: 18pt;
     font-weight: 900;
     text-decoration: none;
+    transition: color 0.2s ease-in-out , text-shadow 0.4s ease-in-out;
+
+}
+.blogs__latest__menu--link:hover{
+    color: #ffc600;
+    text-shadow:0px 0px 20px rgb(0, 0, 0);
+    -webkit-text-stroke: 0.1px #ffc600;
 }
 .blogs__latest__menu--link--Active{
     color: #ffc600;
@@ -757,6 +810,12 @@ body{
     margin-left: 80px;
     max-width: 260px;
     margin-bottom: 40px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out  ;
+}
+.blogs__card:hover{
+    transform: scale(1.01);
+    box-shadow: 0px -15px 20px  rgba(106, 102, 109, 0.274);
+
 }
 .blogs__card--photo{
     width: 100%;
@@ -891,7 +950,20 @@ body{
     border: none;
     font-weight: 900;
     background: #ffc600;
+    cursor: pointer;
+    transition: 
+        color  0.4s ease-in-out,
+        background 0.2s ease-in-out, 
+        letter-spacing 0.2s ease-in-out ;
 }
+.form__main--input--5:hover{
+    border: 2px solid white;
+    padding: 8px 38px;
+    background: #0044B7;
+    color: white;
+    letter-spacing: 2px;
+}
+
 .contact__form__location{
     padding-left: 40px ;
     margin-bottom: 50px;
@@ -940,7 +1012,14 @@ body{
     position: absolute;
 }
 .contact__form__footer--icon{
-    margin-right: 10px;
+    margin: 10px 8px;
+    transition: transform 0.3s ease-in-out, margin  0.3s ease-in-out;
+
+}
+.contact__form__footer--icon:hover{
+    transform: scale(1.4);
+    margin: 10px 8px;
+    cursor: pointer;
 }
 .contact__form__footer--img{
     width: 25px;
@@ -979,8 +1058,19 @@ body{
     margin-bottom: 25px;
 }
 .menu__link{
+    transition: color 0.2s ease-in-out ,text-shadow 0.4s ease-in-out;
+    background: none;
+}
+
+.menu__link:hover{
+    color: #ffc600;
+    text-shadow: 1px 1px 50px #ffc600;
+}
+
+.menu__link{
     color: white;
     text-decoration: none;
+    background: rgba(0, 0, 0, 0);
     font-size:  16pt;
     font-weight: bold;
 }
@@ -1009,6 +1099,11 @@ body{
 }
 .menu__discription--img{
     padding-top: 20px;
+    transition: transform 0.3s ease-in-out, margin  0.3s ease-in-out;
+}
+.menu__discription--img:hover{
+    transform: scale(1.5);
+    margin: 0 10px;
 }
 .weCreate__landing{
    background: url(../img/menu/Layer\ 47.png);
@@ -1283,6 +1378,10 @@ body{
     .contact__form__main--form{
         padding: 0;
         margin: 0 auto;
+    }
+    .header__text{
+        font-size: 20vw !important;
+        text-align: center;
     }
     .menu__header--first, .menu__header--first::before{
         font-size: 2vw;
