@@ -638,20 +638,24 @@ body{
     margin-bottom: 150px;
 }
 .ourTeam__cards{
-    margin: 20px 20px;
-    width: 220px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    margin: 20px 10px;
+    width: 240px;
     transition: transform 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
 }
 .ourTeam__cards:hover{
     transform: scale(1.05);
-    box-shadow: -0px -20px 100px rgb(29, 131, 172);
+    box-shadow: 0px 0px 30px rgba(84, 168, 5, 0.329);
 }
 .ourTeam__img{
     width: 220px;
+    margin: 0 auto;
     object-fit: cover;
 }
 .ourTeam__name--discription{
-    margin-top: 15px;
+    margin: 15px auto;
+
 }
 
 .ourTeam__name--discription--text--first{
@@ -787,13 +791,11 @@ body{
     font-size: 18pt;
     font-weight: 900;
     text-decoration: none;
-    transition: color 0.2s ease-in-out , text-shadow 0.4s ease-in-out;
+    transition: color 0.1s ease-in-out;
 
 }
 .blogs__latest__menu--link:hover{
     color: #ffc600;
-    text-shadow:0px 0px 20px rgb(0, 0, 0);
-    -webkit-text-stroke: 0.1px #ffc600;
 }
 .blogs__latest__menu--link--Active{
     color: #ffc600;
@@ -807,37 +809,51 @@ body{
     justify-content: center;
 }
 .blogs__card{
+    max-height: 500px;
     margin-left: 80px;
-    max-width: 260px;
-    margin-bottom: 40px;
+    width: 280px;
     transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out  ;
 }
 .blogs__card:hover{
     transform: scale(1.01);
-    box-shadow: 0px -15px 20px  rgba(106, 102, 109, 0.274);
+    box-shadow: 0px 0px 30px rgba(84, 168, 5, 0.329);
+
 
 }
 .blogs__card--photo{
-    width: 100%;
+    max-width: 260px;
+    padding-top: 10px;
+    margin: 0 auto;
 }
 .blogs__card--img{
-    width: 100%;    
+    width: 260px;
+
 }
 .blogs__card__text--heading{
     font-size: 18pt;
     color: #ffc600;
     text-decoration: none;
     font-weight: 900;
+    padding: 0 20px;
+
 }
 .blogs__card--text--first--fiscription{
     font-size: 15pt;
     font-weight: 900;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 30px;
+    padding: 0 20px;
+
+
 }
 .blogs__card--text--second--fiscription{
     font-size: 12pt;
     font-weight: bold;
+    padding: 0 20px;
+
+}
+.blogs__card--text{
+    padding-top: 20px;
 }
 /* /blogs */
 /* Contact */
@@ -934,11 +950,14 @@ body{
 .form__main--input--3{
     float: right;
 }
+.form__main--input--1::placeholder, .form__main--input--2::placeholder, .form__main--input--3::placeholder, .form__main--input--4::placeholder{
+    color: #fff;
+}
 .form__main--input--1, .form__main--input--2, .form__main--input--3, .form__main--input--4{
     background: transparent;
     border: 3px solid #fff;
     font-size: 16pt;
-    font-weight: 900;
+    font-weight: 100;
     color: #fff;
     padding: 10px;
     margin-bottom: 10px;
@@ -948,7 +967,7 @@ body{
     padding: 10px 40px;
     font-size: 16pt;
     border: none;
-    font-weight: 900;
+    font-weight: 100;
     background: #ffc600;
     cursor: pointer;
     transition: 
@@ -963,7 +982,6 @@ body{
     color: white;
     letter-spacing: 2px;
 }
-
 .contact__form__location{
     padding-left: 40px ;
     margin-bottom: 50px;
@@ -1058,13 +1076,13 @@ body{
     margin-bottom: 25px;
 }
 .menu__link{
-    transition: color 0.2s ease-in-out ,text-shadow 0.4s ease-in-out;
+    transition: color 0.1s ease-in-out ,text-shadow 0.1s ease-in-out;
     background: none;
 }
 
 .menu__link:hover{
     color: #ffc600;
-    text-shadow: 1px 1px 50px #ffc600;
+    text-shadow: 2px 0px 10px #ffc8007a;
 }
 
 .menu__link{
