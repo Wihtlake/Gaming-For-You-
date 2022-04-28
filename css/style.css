@@ -220,7 +220,6 @@ body{
     max-width: 1500px;
 }
 .about__items{
-    
     width: 320px;
     text-align: center;
     padding: 0px;
@@ -287,7 +286,6 @@ body{
     position: absolute;
     text-align: center;
 }
-
 .featured__menu--list{
     display: flex;
     list-style: none;
@@ -303,8 +301,6 @@ body{
     color: #000;
     text-decoration: none;
     position: relative;
-    
-    
 }
 .featured__menu--link::after{
     content: "";
@@ -330,24 +326,7 @@ body{
     background: #ffc600;
     position: absolute;
     text-align: center;
-    
 }
-/* .featured__menu--active{
-    position: relative;
- */
-
-/* .featured__menu--active::after{
-    content: "";
-    width: 50%;
-    right: 0;
-    left: 0;
-    bottom: -3px;
-    margin: 0 auto;
-    height: 1px;
-    background: #ffc600;
-    position: absolute;
-    text-align: center;
-} */
 .photo__block{
     display: flex;
     width: 100%;
@@ -456,7 +435,6 @@ body{
     font-size: 30pt;
     margin-right: 15px;
     font-family: Myriad Pro3 ;
-
 }
 .strategic__discription__heading--first::before{
     content: "O";
@@ -475,7 +453,6 @@ body{
     font-size: 50pt;
     font-weight: 900;
     font-family: Myriad Pro3 ;
-
 }
 .strategic__discription__heading--first--col--3::before{
     content: "O";
@@ -655,9 +632,7 @@ body{
 }
 .ourTeam__name--discription{
     margin: 15px auto;
-
 }
-
 .ourTeam__name--discription--text--first{
     font-size: 16pt;
 }
@@ -676,7 +651,6 @@ body{
     color: #fff;
     position: relative;
     font-family: Myriad Pro3 ;
-
 }
 .Testimonials__heading__text--first::before{
     content: "T";
@@ -695,25 +669,21 @@ body{
     background: #D2D2D2;
     position: absolute;
 }
-
 .Testimonials__discription{
     display: flex;
     color: #fff;
     padding-bottom: 130px;
 }
-
 .Testimonials__discription__text{
     width: 60%;
     padding: 85px 65px;
     margin: 0 65px;
     text-align: left;
 }
-
 .Testimonials__discription__text--first{
     font-size: 16pt;
     margin-bottom: 15px;
 }
-
 .Testimonials__discription__text--second{
     font-size: 14pt;
 }
@@ -792,7 +762,6 @@ body{
     font-weight: 900;
     text-decoration: none;
     transition: color 0.1s ease-in-out;
-
 }
 .blogs__latest__menu--link:hover{
     color: #ffc600;
@@ -817,8 +786,6 @@ body{
 .blogs__card:hover{
     transform: scale(1.01);
     box-shadow: 0px 0px 30px rgba(84, 168, 5, 0.329);
-
-
 }
 .blogs__card--photo{
     max-width: 260px;
@@ -827,7 +794,6 @@ body{
 }
 .blogs__card--img{
     width: 260px;
-
 }
 .blogs__card__text--heading{
     font-size: 18pt;
@@ -835,7 +801,6 @@ body{
     text-decoration: none;
     font-weight: 900;
     padding: 0 20px;
-
 }
 .blogs__card--text--first--fiscription{
     font-size: 15pt;
@@ -843,14 +808,11 @@ body{
     margin-bottom: 10px;
     margin-top: 30px;
     padding: 0 20px;
-
-
 }
 .blogs__card--text--second--fiscription{
     font-size: 12pt;
     font-weight: bold;
     padding: 0 20px;
-
 }
 .blogs__card--text{
     padding-top: 20px;
@@ -887,7 +849,7 @@ body{
 .contact__map--icon::before{
     content: "S";
     color: #ffc600;
-    font-size: pt;
+    font-size: 50pt;
 }
 .contact__form{/*  */
     width: 55%;
@@ -1032,7 +994,6 @@ body{
 .contact__form__footer--icon{
     margin: 10px 8px;
     transition: transform 0.3s ease-in-out, margin  0.3s ease-in-out;
-
 }
 .contact__form__footer--icon:hover{
     transform: scale(1.4);
@@ -1079,12 +1040,10 @@ body{
     transition: color 0.1s ease-in-out ,text-shadow 0.1s ease-in-out;
     background: none;
 }
-
 .menu__link:hover{
     color: #ffc600;
     text-shadow: 2px 0px 10px #ffc8007a;
 }
-
 .menu__link{
     color: white;
     text-decoration: none;
@@ -1172,7 +1131,6 @@ body{
 @media (max-width: 575.98px) {
     .container {
         width: 100%;
-        
     }
     .container2{
         padding: 0;
@@ -1212,7 +1170,6 @@ body{
     }
     .nav__link{
         font-size: 30pt;
-        
     }
     .nav__link--active::after{
         display: none;
@@ -1237,11 +1194,9 @@ body{
     .description__first{
         font-size: 5vw;
     }
-
     .description__second{
         font-size: 4vw;
     }
-
     .about__text--description::after{
         display: none;
     }
@@ -1254,9 +1209,8 @@ body{
         margin-bottom: 20px;
     }
     .about__text--sublime,.about__text--description,.about__items{
-            min-width: auto;
-        }
-    
+        min-width: auto;
+    }
     .about__text--sublime h2,
     .header__text,
     .heading__text__first,
@@ -1271,15 +1225,13 @@ body{
     .blogs__latest__heading--text,
     .contact__form__heading--text--first,
     .contact__form__heading--text--second,
-    .menu__header--first
-      
-    {
+    .menu__header--first {
         font-size: 15vw;
     }
     .items__heading h2{
         font-size: 7vw;
     } 
-    .featured__menu--link {
+    .featured__menu--link{
         font-size: 6vw;
     }
     .text__sublime--first::before,
@@ -1296,8 +1248,7 @@ body{
     .blogs__latest__heading--text::before,
     .contact__form__heading--text--first::before,
     .contact__form__heading--text--second::before,
-    .menu__header--first::before
-    {
+    .menu__header--first::before{
         font-size: 20vw;
 
     }
@@ -1305,20 +1256,16 @@ body{
         font-size: 5vw;
 
     }
-    .featured__menu--list {
+    .featured__menu--list{
         margin: 50px auto;
     }
-
-
     .contact__block{
         flex-direction: column;
-
     }
     .services__box--heading--second::after,
     .ourTeam__heading--text--second::after,
     .contact__form__heading::after,
-    .strategic__second-heading::after
-    {
+    .strategic__second-heading::after{
         display: none;
     }
     .contact__map{
@@ -1330,7 +1277,6 @@ body{
     .contact__form__footer::before{
         display: none;
     }
-    
     .blogs__block--cards{
         padding: 0;
         align-items: center;
@@ -1342,7 +1288,6 @@ body{
         margin: 50px auto;
         width: 100%;
     }
-   
     .text__sublime--first,.text__sublime--second{
         text-align: center;
         font-size: 10vw;
@@ -1364,7 +1309,6 @@ body{
     }
     .heading__text__second::after{
         display: none;
-
     }
     .strategic__heading{
         text-align: center;
@@ -1414,7 +1358,6 @@ body{
     .services__box--heading,.about__inner{
         flex-direction: column;
     }
-    
     .block__item,.about__items{
         width: 90%;
         margin: 20px auto;
@@ -1665,8 +1608,6 @@ body{
         align-items: center;
         text-align: center;
     }
-
-
  }
 
 @media (max-width: 1199.98px) { 
@@ -1695,7 +1636,6 @@ body{
         width: 100%;
     }
     /* contact */
-
 } 
 @media (max-width: 1200px) { 
      .container, .container1, .container2{
